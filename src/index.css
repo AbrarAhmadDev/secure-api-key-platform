@@ -1,0 +1,26 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #fafafa;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
