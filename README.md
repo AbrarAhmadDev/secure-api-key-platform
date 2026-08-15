@@ -448,31 +448,25 @@ HTTP status:
 ```text
 secure-api-key-platform/
 |
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── supabaseClient.js
-│   |
-│   ├── screenshots/
-│   │   ├── login.png
-│   │   ├── dashboard.png
-│   │   ├── create-key.png
-│   │   ├── api-tester.png
-│   │   └── api-response.png
-│   |
-│   ├── .env
-│   ├── package.json
-│   └── vite.config.js
+├── src/
+│   ├── App.jsx
+│   ├── index.jsx
+│   ├── main.jsx
+│   └── subabaseClient.js
 |
-├── supabase/
-│   └── functions/
-│       └── properties-api/
-│           └── index.ts
-|
-├── database/
-│   └── schema.sql
+├── src/
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── create-key.png
+│   ├── api-tester.png
+│   └── limit-api.png
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
 |
 └── README.md
 ```
@@ -649,22 +643,6 @@ Expected result:
 ```
 
 These tests verify API authentication, rate limiting, and key revocation.
-
-## Future Improvements
-
-* API key scopes and permissions
-* Per key rate limits
-* API usage analytics
-* Request logging
-* Usage quotas
-* API documentation
-* OpenAPI specification
-* API versioning
-* Team and organization support
-* Multiple environments
-* Custom domains
-* Production grade distributed rate limiting
-* Usage based billing
 
 ## License
 
